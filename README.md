@@ -1,6 +1,6 @@
 # Northside Food Pantry
 
-A small sign-up app for a food pantry's Saturday pickups. Course starter app for SDC332.
+A small sign-up app for a food pantry's Saturday pickups, with messages. Course starter app for SDC332.
 
 - `app/`: the app code
 - `tests/`: the tests (`python -m unittest discover -s tests -v`)
