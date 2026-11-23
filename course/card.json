@@ -1,0 +1,28 @@
+{
+  "app": "Northside Food Pantry",
+  "card": 1234,
+  "deployment": {
+    "production address": "https://pantry-card1234.example.com",
+    "time limit for each deploy job (minutes)": 8
+  },
+  "owner's rule": {
+    "Saturday capacity (families)": 28,
+    "most pickup slots one family can book": 2,
+    "place in line": "the first family on the waitlist is number 1"
+  },
+  "release package": {
+    "artifact name": "pantry-build-card1234",
+    "keep the artifact for (days)": 5,
+    "test results": "shown on the run's Summary page"
+  },
+  "speed target (seconds per pipeline run)": 35,
+  "team": {
+    "developers": 5,
+    "how a release happens today": "Every change goes through a pull request; the tests run on it automatically and one other developer reviews it. After a merge, whoever merged runs a deploy script from their own laptop (about 15 minutes) and watches the error log for 30 minutes. The team merges several changes a day, so the script runs many times a day, and last week it was forgotten twice. Undoing a release takes under 10 minutes with the same script.",
+    "releases": "several times a day",
+    "separate tester": "no",
+    "tests today": "run automatically on every pull request",
+    "time to undo a release in production": "under 10 minutes",
+    "who checks a release": "the tests and one other developer"
+  }
+}
